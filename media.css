@@ -1,0 +1,102 @@
+
+
+ @media (min-width:640px) {
+    .sm-100{
+        width: 100%;
+    }
+    .sm-50{
+        width: 50%;
+    }
+    .sm-33{
+        width: 33.33%;
+
+    }
+    .sm-25{
+        width: 25%;
+    }
+}
+@media (min-width:768px) {
+    .md-100{
+        width: 100%;
+    }
+    .md-50{
+        width: 50%;
+    }
+    .md-33{
+        width: 33.33%;
+
+    }
+    .md-25{
+        width: 25%;
+    }
+} 
+ @media (min-width:1024px) {
+    .lg-100{
+        width: 100%;
+    }
+    .lg-50{
+        width: 50%;
+    }
+    .lg-33{
+        width: 33.33%;
+
+    }
+    .lg-25{
+        width: 25%;
+    }
+}  
+
+
+  @media (min-width:1280px) {
+    .xl-100{
+        width: 100%;
+    }
+    .xl-50{
+        width: 50%;
+    }
+    .xl-33{
+        width: 33.33%;
+
+    }
+    .xl-25{
+        width: 25%;
+    }
+}   
+
+@media (max-width:768px){
+
+   .hover-nav ul{
+    
+    position: absolute;
+    
+    text-align: right;
+   
+    z-index: 999;
+    background-color: aqua;
+    display: block;
+    width: 100%;
+    opacity: 0; 
+   
+    visibility: hidden; 
+    transition: 2s;
+
+   } 
+   .hover-nav ul li{
+    padding-top: 40px;
+   }
+   .hide{
+    width: 25px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    right: 45px;
+    bottom: 40px;
+   
+   }
+   .list-nav .hide:hover .hover-nav ul {
+    opacity: 1;
+    visibility: visible;
+    
+   }
+   
+}

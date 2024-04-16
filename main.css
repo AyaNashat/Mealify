@@ -1,0 +1,767 @@
+.container{
+    background-color: #FFFFFF;
+    position: relative;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 55;
+     display: flex; 
+
+    justify-content: space-between;
+    width: 100%;
+    /* height: 20%; */
+   background-color: white;
+}
+.navbar i{
+ padding-right: 20px;
+ font-size: 23px;
+ margin-top: 27px;
+}
+.icon-nav{
+    display: flex;
+    justify-content: right;
+    width: 20%;
+}
+.text-nav{
+    margin-left: 3%;
+    width: 20%;
+}
+.hover-nav li{
+    list-style: none;
+    color: black;
+    padding-left: 30px;
+   
+    
+}
+.hover-nav li a {
+    text-decoration-line: none;
+    color: black;
+    
+   
+}
+.list-nav {
+    width: 50%;
+}
+.hover-nav ul{
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.hover-nav{
+    position: relative;
+}
+
+
+/* enjoy your health ......................................................................*/
+.your-dish{
+    background-color: #EEEEEE;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.dish-text{
+    width: 40%;
+    
+}
+.dish-text h2{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    color: rgb(55, 55, 63);
+    font-size: 65px;
+}
+.dish-text p{
+    color: rgb(79, 79, 90);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.btn{
+    display: flex;
+   width: 80%;
+  
+}
+.main-btn{
+    width: 40%;
+   
+    box-sizing: border-box;
+    padding: 20px;
+    color: white;
+    background-color: #E61414;
+    border-radius: 5px 20px 20px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.vibtn{
+    display: flex;
+    width: 40%;
+flex:1 ;
+margin:5%;
+color: black;
+text-decoration: none;
+font-weight: 600;
+font-size: 16px;
+color: rgb(55, 55, 63);
+transition:color 1s ;
+}
+.bficon::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-light);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: inherit;
+    
+}
+.vibtn:hover{
+    color: #E61414;
+}
+
+
+.vicon i{
+    width: 20%;
+    
+    font-size: 20px;
+}
+
+.dish-img{
+    width: 40%;
+    position: relative;
+  animation: 0.3s infinite alternate;
+}
+.dish-img img{
+    width: 100%;
+}
+.dish-img:hover{
+    animation-name: dish;
+
+
+}
+@keyframes dish {
+    0% {
+         transform: rotateX(10deg); 
+      }
+      100% {
+         transform: rotateY(-10deg);
+      }
+      
+    }
+
+
+
+/* Our Professional Chef..................................................................... */
+.third-chef{
+    width: 100%;
+   text-align: center;
+   margin-top: 3%;
+   
+}
+.third-chef p{
+    color: rgb(127, 127, 144);
+    size: 14px;
+    font-weight: 400;
+    
+}
+.third-chef h2{
+    font-family:"Amatic SC", sans-serif;
+    font-size: 50px;
+    color: rgb(33, 37, 41);
+    font-weight: 400;
+}
+.third-chef span{
+    color: #E61414;
+}
+.chef-small{
+    width: 28%;
+    position: relative;
+}
+.chef{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.chef img{
+    width: 100%;
+}
+.chef-hover{
+    width:auto;
+    display: flex;
+
+     justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 100%;
+    font-size: 30px;
+    padding-top: 25%;
+    opacity: 0;
+    color: rgba(121, 116, 116, 0.4);
+    translate: 100%;
+   
+    
+}
+.chef-small:hover{
+    transform: scale(1.1);
+
+}
+.chef-small:hover .chef-hover{
+    left: 0;
+    opacity: 1;
+    translate: 0;
+    transition: opacity 1s 1s;
+}
+.chef-con{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* four gallery...................................................... */
+.gallery{
+    background-color: #EEEEEE;
+    margin-top: 5%;
+}
+.main-title{
+    text-align: center;
+}
+.main-title p{
+    color: rgb(127, 127, 144);
+    font-weight:400 ;
+    font-size: 14px;
+    padding-top: 2%;
+}
+.main-title h2{
+    font-family:"Amatic SC", sans-serif ;
+    font-weight: 400;
+    font-size:50px ;
+    color: rgb(33, 37, 41);
+}
+.main-title span{
+    color: #E61414;
+}
+.gallery-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.part1-1{
+    width: 30%;
+}
+.part1{
+    
+    position: relative;
+    overflow: hidden;
+  
+}
+.part1 img{
+    width: 100%;
+    border-style: solid;
+    border-color:white;
+}
+.hover-gallery{
+    background-color:rgba(0, 0, 0, .7);
+    position: absolute;
+    text-align: center;
+    top:0 ;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translatey(100%);
+    color: white;
+    font-size: 20px;
+     opacity: 0;
+   
+    
+}
+.part1:hover .hover-gallery{
+    transform: translateY(0);
+    transition: transform 1s;
+    opacity: 1;
+    top: 0;
+}
+
+/* ............. */
+
+.part2{
+    
+    position: relative;
+    overflow: hidden;
+  
+}
+.part2 img{
+    width: 100%;
+    border-style: solid;
+    border-color:white;
+}
+.hover-gallery2{
+    background-color:rgba(0, 0, 0, .7);
+    position: absolute;
+    text-align: center;
+    top:0 ;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translatey(100%);
+    color: white;
+    font-size: 20px;
+     opacity: 0;
+   
+    
+}
+.part2:hover .hover-gallery2{
+    transform: translateY(0);
+    transition: transform 1s;
+    opacity: 1;
+    top: 0;
+}
+/* .......... */
+.part2-2{
+    width: 30%;
+}
+.part2-1{
+    /* width: 25%; */
+    position: relative;
+    overflow: hidden;
+  
+}
+.part2-1 img{
+    width: 100%;
+    border-style: solid;
+    border-color:white;
+}
+.hover-gallery2-1{
+    background-color:rgba(0, 0, 0, .7);
+    position: absolute;
+    text-align: center;
+    top:0 ;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translatey(100%);
+    color: white;
+    font-size: 20px;
+     opacity: 0;
+   
+    
+}
+.part2-1:hover .hover-gallery2-1{
+    transform: translateY(0);
+    transition: transform 1s;
+    opacity: 1;
+    top: 0;
+}
+
+
+.part2-3{
+    /* width: 25%; */
+    position: relative;
+    overflow: hidden;
+  
+}
+.part2-3 img{
+    width: 100%;
+    border-style: solid;
+    border-color:white;
+}
+.hover-gallery2-3{
+    background-color:rgba(0, 0, 0, .7);
+    position: absolute;
+    text-align: center;
+    top:0 ;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translatey(100%);
+    color: white;
+    font-size: 20px;
+     opacity: 0;
+   
+    
+}
+.part2-3:hover .hover-gallery2-3{
+    transform: translateY(0);
+    transition: transform 1s;
+    opacity: 1;
+    top: 0;
+}
+/* 3-3....... .....*/
+.part3-3{
+    width: 30%;
+}
+.part3-1{
+    /* width: 25%; */
+    position: relative;
+    overflow: hidden;
+  
+}
+.part3-1 img{
+    width: 100%;
+    border-style: solid;
+    border-color:white;
+}
+.hover-gallery3-1{
+    background-color:rgba(0, 0, 0, .7);
+    position: absolute;
+    text-align: center;
+    top:0 ;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translatey(100%);
+    color: white;
+    font-size: 20px;
+     opacity: 0;
+   
+    
+}
+.part3-1:hover .hover-gallery3-1{
+    transform: translateY(0);
+    transition: transform 1s;
+    opacity: 1;
+    top: 0;
+}
+/* .......... */
+.part3-2{
+    /* width: 25%; */
+    position: relative;
+    overflow: hidden;
+  
+}
+.part3-2 img{
+    width: 100%;
+    border-style: solid;
+    border-color:white;
+}
+.hover-gallery3-2{
+    background-color:rgba(0, 0, 0, .7);
+    position: absolute;
+    text-align: center;
+    top:0 ;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translatey(100%);
+    color: white;
+    font-size: 20px;
+     opacity: 0;
+   
+    
+}
+.part3-2:hover .hover-gallery3-2{
+    transform: translateY(0);
+    transition: transform 1s;
+    opacity: 1;
+    top: 0;
+}
+/* ............... */
+.part3-4{
+    /* width: 25%; */
+    position: relative;
+    overflow: hidden;
+  
+}
+.part3-4 img{
+    width: 100%;
+    border-style: solid;
+    border-color:white;
+}
+.hover-gallery3-4{
+    background-color:rgba(0, 0, 0, .7);
+    position: absolute;
+    text-align: center;
+    top:0 ;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translatey(100%);
+    color: white;
+    font-size: 20px;
+     opacity: 0;
+   
+    
+}
+.part3-4:hover .hover-gallery3-4{
+    transform: translateY(0);
+    transition: transform 1s;
+    opacity: 1;
+    top: 0;
+}
+/* contact us................................................................. */
+.contact-text {
+    text-align: center;
+    margin-top: 7%;
+}
+.contact-text p{
+    color: rgb(127, 127, 144);
+    font-weight: 400;
+    font-size: 14px;
+}
+.contact-text h2{
+    color:rgb(33, 37, 41);
+    font-size: 50px;
+    font-family:"Amatic SC", sans-serif ;
+    font-weight: 400;
+}
+.contact-text span{
+    color: #E61414;
+}
+.iframe{
+    text-align: center;
+}
+.contact-icon{
+    width: 50%;
+    background-color: #F5F5F5;
+    display: flex;
+    
+    margin-top: 2%;
+   
+    
+}
+.contact-address{
+    width: 3%;
+    padding-top: 35px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    color: white;
+    background-color: #E61414;
+    border-radius: 50%;
+}
+.contact-con{
+   width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    margin-left: 12%;
+    justify-content: space-between;
+    
+}
+.contact-address{
+    margin-right: 2%;
+}
+.contact-addres h3{
+    color: rgb(125, 125, 125);
+    font-weight: 700;
+    font-size: 20px;
+}
+/* form.......... */
+.form{
+   
+    width: 80%;
+    margin-top: 3%;
+    display: flex;
+   justify-content: space-around;
+    flex-wrap: wrap;
+    
+   
+}
+.input-group{
+   
+width: 80%;
+margin-right: 4%;
+display: flex;
+padding-top: 3%;
+padding-right: 3%;
+flex-wrap: wrap; 
+}
+.input-name input{
+    height: 40px;
+    padding-right: 4%;
+    justify-content: space-between;
+}  
+.input-name{
+    margin-left: 5%;
+}
+.form-suject{
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+.form-suject input{
+height: 40px;
+}
+.form-input{
+    margin-top: 2%;
+    margin-left: 4%;
+}
+.form-button{
+    margin-top: 2%;
+    justify-content: center;
+    display: flex;
+   
+}
+.form-button button{
+    justify-content: center;
+    background-color: #E61414;
+    border-style: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+}
+/* last section ..............................................................................*/
+
+.con-footer{
+    background-color:black;
+    width: 100%;
+    display: flex;
+    margin-top:7%;
+    color: rgb(255, 255, 255);
+    font-family: Inter, sans-serif;
+     flex-wrap: wrap; 
+}
+.first-part{
+    width: 25%;
+    margin-left: 2%;
+    
+
+}
+.first-melify img{
+    width: 40;
+    display: inline;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+.first-melify h2{
+    display: inline;
+    font-size: 30px;
+    font-family: Inter, sans-serif;
+}
+.first-melify p{
+    width: 230px;
+    font-family: Inter, sans-serif;
+    
+}
+.melf-icon{
+    font-size: 30px;
+    
+}
+.melf-icon i{
+    padding-right: 9%;
+}
+.second-melify{
+    text-align: center;
+}
+.second-melify h3{
+    font-size: 19px;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+}
+/* second part.... .......*/
+.footer-sec{
+    width: 40%;
+    margin-left: 3%;
+}
+.sec-text h3{
+    font-size: 19px;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+}
+.sec-text p{
+    font-size: 16px;
+    font-weight: 400;
+    width: 88%;
+    font-family: Inter, sans-serif;
+}
+.sec-input input{
+    height: 35px;
+}
+.sec-input i a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    margin-left: 6%;
+    font-size: 15px;
+
+}
+.sec-input i{
+    background-color: #E61414;
+    width:25% ;
+    height: 8%;
+    text-align: center;
+    padding-top: 1.5%;
+}
+.menu:hover p{
+    transform: translateX(8px);
+    background-color: rgba(143, 129, 129,.7);
+    transition: all 1s;
+
+}
+.menu-link .menu{
+    width: 80%;
+}
+
+.about-us:hover p{
+    transform: translateX(8px);
+    background-color: rgba(143, 129, 129,.7);
+    transition: all 1s;
+
+}
+.menu-link .about-us{
+    width: 80%;
+}
+.Testimonial:hover p{
+    transform: translateX(8px);
+    background-color: rgba(143, 129, 129,.7);
+    transition: all 1s;
+
+}
+.menu-link .Testimonial{
+    width: 80%;
+}
+.in{
+    display: flex;
+   
+    width: 40%;
+}
+.Promo:hover p{
+    transform: translateX(8px);
+    background-color: rgba(143, 129, 129,.7);
+    transition: all 1s;
+
+}
+.menu-link .Promo{
+    width: 80%;
+}
+.Contact:hover p{
+    transform: translateX(8px);
+    background-color: rgba(143, 129, 129,.7);
+    transition: all 1s;
+
+}
+.menu-link .Contact{
+    width: 80%;
+}
+.Our-Partners:hover p{
+    transform: translateX(8px);
+    background-color: rgba(143, 129, 129,.7);
+    transition: all 1s;
+
+}
+.menu-link .Our-Partners{
+    width: 80%;
+}
+body{
+    margin: 0;
+}
+.third-touch i{
+    margin-top: 4%;
+    margin-right: 2%;
+    color: #E61414;
+}
+.third-touch{
+    width:25% ;
+}
+.con-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
